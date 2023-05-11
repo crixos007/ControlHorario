@@ -1,0 +1,383 @@
+package com.vsm.constant;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+@Service("MsjConstantes")
+public class MensajesConstante {
+	public static String ERROR_EXECUTE_SELECT_CODE; 
+	@Value("${ERROR_BD003_COD}")	
+	public void ERROR_BD003_COD(String ERROR_BD003_COD) {
+		ERROR_EXECUTE_SELECT_CODE = ERROR_BD003_COD;
+    }
+	public static String ERROR_EXECUTE_SELECT_MSJ; 
+	@Value("${ERROR_BD003_MSJ}")	
+	public void ERROR_BD003_MSJ(String ERROR_BD003_MSJ) {
+		ERROR_EXECUTE_SELECT_MSJ = ERROR_BD003_MSJ;
+    }
+	
+	public static String ERROR_CIA_NO_DATA; 
+	@Value("${ERROR_WS001_COD}")	
+	public void ERROR_WS001_COD(String ERROR_WS001_COD) {
+		ERROR_CIA_NO_DATA = ERROR_WS001_COD;
+    }
+	
+	public static String ERROR_EXECUTE_INSERT_CODE; 
+	@Value("${ERROR_BD001_COD}")	
+	public void ERROR_BD001_COD(String ERROR_BD001_COD) {
+		ERROR_EXECUTE_INSERT_CODE = ERROR_BD001_COD;
+    }
+	public static String ERROR_EXECUTE_INSERT_MSJ; 
+	@Value("${ERROR_BD001_MSJ}")	
+	public void ERROR_BD001_MSJ(String ERROR_BD001_MSJ) {
+		ERROR_EXECUTE_INSERT_MSJ = ERROR_BD001_MSJ;
+    }
+	
+	public static String ERROR_GENERAL;
+	@Value("${GET_COD_ERROR_EG000}")
+    public void GET_COD_ERROR_EG000(String GET_COD_ERROR_EG000) {
+		ERROR_GENERAL = GET_COD_ERROR_EG000;
+    }
+	
+	public static String DESCRIPCION_ERROR_GENERAL;
+	@Value("${GET_DESC_ERROR_EG000}")
+    public void GET_DESC_ERROR_EG000(String GET_DESC_ERROR_EG000) {
+		DESCRIPCION_ERROR_GENERAL = GET_DESC_ERROR_EG000;
+    }
+	
+	public static String ERROR_ID_CIA_NULL;
+	@Value("${GET_COD_ERROR_ET310}")
+    public void GET_COD_ERROR_ET310(String GET_COD_ERROR_ET310) {
+		ERROR_ID_CIA_NULL = GET_COD_ERROR_ET310;
+    }
+	
+	public static String ERROR_DIAS_EST_NULL;
+	@Value("${GET_COD_ERROR_ET517}")
+    public void GET_COD_ERROR_ET517(String GET_COD_ERROR_ET517) {
+		ERROR_DIAS_EST_NULL = GET_COD_ERROR_ET517;
+    }
+	
+	public static String ERROR_DIAS_EST_INVALID;
+	@Value("${GET_COD_ERROR_ET518}")
+    public void GET_COD_ERROR_ET518(String GET_COD_ERROR_ET518) {
+		ERROR_DIAS_EST_INVALID = GET_COD_ERROR_ET518;
+    }
+	
+	public static String ERROR_CIA_ET_NO_DATA;
+	@Value("${GET_COD_ERROR_ET313}")
+    public void GET_COD_ERROR_ET313(String GET_COD_ERROR_ET313) {
+		ERROR_CIA_ET_NO_DATA = GET_COD_ERROR_ET313;
+    }
+	
+	public static String SUCCES;
+	@Value("${GET_COD_ERROR_ET000}")
+    public void GET_COD_ERROR_ET000(String GET_COD_ERROR_ET000) {
+		SUCCES = GET_COD_ERROR_ET000;
+    }
+	
+	public static String EMAIL_NULO;
+	@Value("${GET_COD_ERROR_ET201}")
+    public void GET_COD_ERROR_ET201(String GET_COD_ERROR_ET201) {
+		EMAIL_NULO = GET_COD_ERROR_ET201;
+    }
+	
+	public static String EMAIL_INVALIDO;
+	@Value("${GET_COD_ERROR_ET221}")
+    public void GET_COD_ERROR_ET221(String GET_COD_ERROR_ET221) {
+		EMAIL_INVALIDO = GET_COD_ERROR_ET221;
+    }
+	
+	public static String PASS_NULO;
+	@Value("${GET_COD_ERROR_ET202}")
+    public void GET_COD_ERROR_ET202(String GET_COD_ERROR_ET202) {
+		PASS_NULO = GET_COD_ERROR_ET202;
+    }
+	
+	public static String ERROR_INSERT_ET_SALDO;
+	@Value("${GET_COD_ERROR_ET306}")
+    public void GET_COD_ERROR_ET306(String GET_COD_ERROR_ET306) {
+		ERROR_INSERT_ET_SALDO = GET_COD_ERROR_ET306;
+    }
+	
+	public static String COMPANIA_NO_EXISTE;
+	@Value("${GET_COD_ERROR_ET214}")
+    public void GET_COD_ERROR_ET214(String GET_COD_ERROR_ET214) {
+		COMPANIA_NO_EXISTE = GET_COD_ERROR_ET214;
+    }
+	
+	public static String EMPLEADO_NO_EXISTE;
+	@Value("${GET_COD_ERROR_ET222}")
+    public void GET_COD_ERROR_ET222(String GET_COD_ERROR_ET222) {
+		EMPLEADO_NO_EXISTE = GET_COD_ERROR_ET222;
+    }
+	
+	public static String EMPLEADO_ET_NO_EXISTE;
+	@Value("${GET_COD_ERROR_ET320}")
+    public void GET_COD_ERROR_ET320(String GET_COD_ERROR_ET320) {
+		EMPLEADO_ET_NO_EXISTE = GET_COD_ERROR_ET320;
+    }
+	
+	public static String COMPANIA_NULO;
+	@Value("${GET_COD_ERROR_ET262}")
+    public void GET_COD_ERROR_ET262(String GET_COD_ERROR_ET262) {
+		COMPANIA_NULO = GET_COD_ERROR_ET262;
+    }
+	
+	public static String EMPLEADO_NULO;
+	@Value("${GET_COD_ERROR_ET260}")
+    public void GET_COD_ERROR_ET260(String GET_COD_ERROR_ET260) {
+		EMPLEADO_NULO = GET_COD_ERROR_ET260;
+    }
+
+	public static String ERROR_CONSULTA_EMP;
+	@Value("${GET_COD_ERROR_DB211}")
+    public void GET_COD_ERROR_DB211(String GET_COD_ERROR_DB211) {
+		ERROR_CONSULTA_EMP = GET_COD_ERROR_DB211;
+    }
+	
+	public static String ERROR_CONSULTA_EMP_CIA;
+	@Value("${GET_COD_ERROR_DB220}")
+    public void GET_COD_ERROR_DB220(String GET_COD_ERROR_DB220) {
+		ERROR_CONSULTA_EMP_CIA = GET_COD_ERROR_DB220;
+    }
+	
+	public static String ERROR_CONSULTA_ZONA;
+	@Value("${GET_COD_ERROR_DB227}")
+    public void GET_COD_ERROR_DB227(String GET_COD_ERROR_DB227) {
+		ERROR_CONSULTA_ZONA = GET_COD_ERROR_DB227;
+    }
+	
+	public static String NIP_INCORRECTO;
+	@Value("${GET_COD_ERROR_ET217}")
+    public void GET_COD_ERROR_ET217(String GET_COD_ERROR_ET217) {
+		NIP_INCORRECTO = GET_COD_ERROR_ET217;
+    }
+	
+	public static String USUARIOET_NO_CIA;
+	@Value("${GET_COD_ERROR_ET231}")
+    public void GET_COD_ERROR_ET231(String GET_COD_ERROR_ET231) {
+		USUARIOET_NO_CIA = GET_COD_ERROR_ET231;
+    }
+	
+	public static String ERROR_ID_ADMIN_NULL;
+	@Value("${GET_COD_ERROR_ET300}")
+    public void GET_COD_ERROR_ET300(String GET_COD_ERROR_ET300) {
+		ERROR_ID_ADMIN_NULL = GET_COD_ERROR_ET300;
+    }
+	
+	public static String ERROR_TOTAL_NULL;
+	@Value("${GET_COD_ERROR_ET301}")
+    public void GET_COD_ERROR_ET301(String GET_COD_ERROR_ET301) {
+		ERROR_TOTAL_NULL = GET_COD_ERROR_ET301;
+    }
+	
+	public static String ERROR_FOLIO_NULL;
+	@Value("${GET_COD_ERROR_ET302}")
+    public void GET_COD_ERROR_ET302(String GET_COD_ERROR_ET302) {
+		ERROR_FOLIO_NULL = GET_COD_ERROR_ET302;
+    }
+	
+	public static String ERROR_CVE_PAIS_NULL;
+	@Value("${GET_COD_ERROR_ET234}")
+    public void GET_COD_ERROR_ET234(String GET_COD_ERROR_ET234) {
+		ERROR_CVE_PAIS_NULL = GET_COD_ERROR_ET234;
+    }
+	
+	public static String ERROR_SUBTOTAL_NULL;
+	@Value("${GET_COD_ERROR_ET235}")
+    public void GET_COD_ERROR_ET235(String GET_COD_ERROR_ET235) {
+		ERROR_SUBTOTAL_NULL = GET_COD_ERROR_ET235;
+    }
+	
+	public static String ERROR_USUARIO_NO_DATA;
+	@Value("${GET_COD_ERROR_ET304}")
+    public void GET_COD_ERROR_ET304(String GET_COD_ERROR_ET304) {
+		ERROR_USUARIO_NO_DATA = GET_COD_ERROR_ET304;
+    }
+	
+	public static String ERROR_PAIS_NO_DATA;
+	@Value("${GET_COD_ERROR_ET213}")
+    public void GET_COD_ERROR_ET213(String GET_COD_ERROR_ET213) {
+		ERROR_PAIS_NO_DATA = GET_COD_ERROR_ET213;
+    }
+	
+	public static String ERROR_SALDO_NO_DATA;
+	@Value("${GET_COD_ERROR_ET307}")
+    public void GET_COD_ERROR_ET307(String GET_COD_ERROR_ET307) {
+		ERROR_SALDO_NO_DATA = GET_COD_ERROR_ET307;
+    }
+	
+	public static String ERROR_COMPRAR_CHECADAS_NULL;
+	@Value("${GET_COD_ERROR_ET303}")
+    public void GET_COD_ERROR_ET303(String GET_COD_ERROR_ET303) {
+		ERROR_COMPRAR_CHECADAS_NULL = GET_COD_ERROR_ET303;
+    }
+	
+	public static String ERROR_ID_USUARIO_NULL;
+	@Value("${GET_COD_ERROR_ET200}")
+    public void GET_COD_ERROR_ET200(String GET_COD_ERROR_ET200) {
+		ERROR_ID_USUARIO_NULL = GET_COD_ERROR_ET200;
+    }	
+	
+	public static String ERROR_ID_USUARIO_NO_DATA;
+	@Value("${GET_COD_ERROR_ET216}")
+    public void GET_COD_ERROR_ET216(String GET_COD_ERROR_ET216) {
+		ERROR_ID_USUARIO_NO_DATA = GET_COD_ERROR_ET216;
+    }
+	
+	public static String ENTRADA_NO_EXISTE;
+	@Value("${GET_COD_ERROR_ET505}")
+	public void GET_COD_ERROR_ET505(String GET_COD_ERROR_ET505) {
+		ENTRADA_NO_EXISTE = GET_COD_ERROR_ET505;
+    }	
+	
+	public static String ENTRADA_DUPLICADA;
+	@Value("${GET_COD_ERROR_ET033}")
+	public void GET_COD_ERROR_ET033(String GET_COD_ERROR_ET033) {
+		ENTRADA_DUPLICADA = GET_COD_ERROR_ET033;
+    }	
+	
+	public static String SALIDA_DUPLICADA;
+	@Value("${GET_COD_ERROR_ET040}")
+	public void GET_COD_ERROR_ET040(String GET_COD_ERROR_ET040) {
+		SALIDA_DUPLICADA = GET_COD_ERROR_ET040;
+    }
+	
+	public static String REGISTRO_DUPLICADO;
+	@Value("${GET_COD_ERROR_ET042}")
+	public void GET_COD_ERROR_ET042(String GET_COD_ERROR_ET042) {
+		REGISTRO_DUPLICADO = GET_COD_ERROR_ET042;
+    }
+	
+	public static String ERROR_COMPARA_FOTO;
+	@Value("${GET_COD_ERROR_ET032}")
+	public void GET_COD_ERROR_ET032(String GET_COD_ERROR_ET032) {
+		ERROR_COMPARA_FOTO = GET_COD_ERROR_ET032;
+    }
+	
+	public static String ADMINISTRADOR_NO_EXISTE;
+	@Value("${GET_COD_ERROR_ET239}")
+	public void GET_COD_ERROR_ET239(String GET_COD_ERROR_ET239) {
+		ADMINISTRADOR_NO_EXISTE = GET_COD_ERROR_ET239;
+    }	
+	
+	public static String UNIDAD_MEDIDA_NO_EXISTE;
+	@Value("${GET_COD_ERROR_ET410}")
+	public void GET_COD_ERROR_ET410(String GET_COD_ERROR_ET410) {
+		UNIDAD_MEDIDA_NO_EXISTE = GET_COD_ERROR_ET410;
+    }
+	
+	public static String ESTACION_NO_EXISTE;
+	@Value("${GET_COD_ERROR_ET506}")
+	public void GET_COD_ERROR_ET506(String GET_COD_ERROR_ET506) {
+		ESTACION_NO_EXISTE = GET_COD_ERROR_ET506;
+    }	
+	
+	public static String P1_MATCH_NO_EXISTE;
+	@Value("${GET_COD_ERROR_ET029}")
+	public void GET_COD_ERROR_ET029(String GET_COD_ERROR_ET029) {
+		P1_MATCH_NO_EXISTE = GET_COD_ERROR_ET029;
+    }	
+		
+	public static String P2_MATCH_NO_EXISTE;
+	@Value("${GET_COD_ERROR_ET030}")
+	public void GET_COD_ERROR_ET030(String GET_COD_ERROR_ET030) {
+		P2_MATCH_NO_EXISTE = GET_COD_ERROR_ET030;
+    }	
+		
+	public static String P3_MATCH_NO_EXISTE;
+	@Value("${GET_COD_ERROR_ET507}")
+	public void GET_COD_ERROR_ET507(String GET_COD_ERROR_ET507) {
+		P3_MATCH_NO_EXISTE = GET_COD_ERROR_ET507;
+    }
+	
+	public static String ERROR_ENTRADA_NULL;
+	@Value("${GET_COD_ERROR_ET006}")
+    public void GET_COD_ERROR_ET006(String GET_COD_ERROR_ET006) {
+		ERROR_ENTRADA_NULL = GET_COD_ERROR_ET006;
+    }
+	
+	public static String COMPANIA_NULA;
+	@Value("${GET_COD_ERROR_ET001}")
+    public void GET_COD_ERROR_ET001(String GET_COD_ERROR_ET001) {
+		COMPANIA_NULA = GET_COD_ERROR_ET001;
+    }
+	
+	public static String ERROR_MR;
+	@Value("${GET_COD_ERROR_ET031}")
+	public void GET_COD_ERROR_ET031(String GET_COD_ERROR_ET031) {
+		ERROR_MR = GET_COD_ERROR_ET031;
+    }
+	
+	public static String ERROR_BASE_DATOS;
+	@Value("${GET_COD_ERROR_WS022}")
+	public void GET_COD_ERROR_WS022(String GET_COD_ERROR_WS022) {
+		ERROR_BASE_DATOS = GET_COD_ERROR_WS022;
+    }
+	
+	public static String ERROR_CLAVE_TURNO_NULL;
+	@Value("${GET_COD_ERROR_CT002}")
+	public void GET_COD_ERROR_CT002(String GET_COD_ERROR_CT002) {
+		ERROR_CLAVE_TURNO_NULL = GET_COD_ERROR_CT002;
+    }
+	
+	public static String ERROR_TURNO_NULL;
+	@Value("${GET_COD_ERROR_CT003}")
+	public void GET_COD_ERROR_CT003(String GET_COD_ERROR_CT003) {
+		ERROR_TURNO_NULL = GET_COD_ERROR_CT003;
+    }
+	
+	public static String ERROR_CHECADA_DUPLICADA;
+	@Value("${GET_COD_ERROR_ET041}")
+	public void GET_COD_ERROR_ET041(String GET_COD_ERROR_ET041) {
+		ERROR_CHECADA_DUPLICADA = GET_COD_ERROR_ET041;
+    }
+	
+	public static String FECHA_NULO;
+	@Value("${GET_COD_ERROR_ET025}")
+    public void GET_COD_ERROR_ET025(String GET_COD_ERROR_ET025) {
+		FECHA_NULO = GET_COD_ERROR_ET025;
+    }
+	
+	public static String ERROR_TIPO_ENTRADA;
+	@Value("${GET_COD_ERROR_ET026}")
+    public void GET_COD_ERROR_ET026(String GET_COD_ERROR_ET026) {
+		ERROR_TIPO_ENTRADA = GET_COD_ERROR_ET026;
+    }
+	
+	public static String ERROR_FOTO;
+	@Value("${GET_COD_ERROR_ET027}")
+    public void GET_COD_ERROR_ET027(String GET_COD_ERROR_ET027) {
+		ERROR_FOTO = GET_COD_ERROR_ET027;
+    }
+	
+	public static String ENTRADA_MAYOR_CHECADA;
+	@Value("${GET_COD_ERROR_ET045}")
+	public void GET_COD_ERROR_ET045(String GET_COD_ERROR_ET045) {
+		ENTRADA_MAYOR_CHECADA = GET_COD_ERROR_ET045;
+    }
+	
+	public static String ERROR_PRIORIDAD;
+	@Value("${GET_COD_ERROR_ET028}")
+    public void GET_COD_ERROR_ET028(String GET_COD_ERROR_ET028) {
+		ERROR_PRIORIDAD = GET_COD_ERROR_ET028;
+    }
+	
+	public static String ERROR_RN_NO_EXISTE;
+	@Value("${GET_COD_ERROR_ET003}")
+	public void GET_COD_ERROR_ET003(String GET_COD_ERROR_ET003) {
+		ERROR_RN_NO_EXISTE = GET_COD_ERROR_ET003;
+    }
+	
+	public static String ERROR_RETARDO_FALTA;
+	@Value("${GET_COD_ERROR_ET522}")
+	public void GET_COD_ERROR_ET522(String GET_COD_ERROR_ET522) {
+		ERROR_RETARDO_FALTA = GET_COD_ERROR_ET522;
+    }
+	
+	public static String SUCCES_RETARDO;
+	@Value("${GET_COD_CT000}")
+    public void GET_COD_CT000(String GET_COD_CT000) {
+		SUCCES_RETARDO = GET_COD_CT000;
+    }	
+}

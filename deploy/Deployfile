@@ -1,0 +1,39 @@
+*******DESARROLLO-192.168.0.88*******
+docker build -t human-etime-check /home/admindocker/deployDesarrollo/HUMAN/Checada
+docker run -e "CONFIG_ENVIROMENT=env-var-conf-DES" -e "SERVER_ENVIROMENT=http://192.168.0.62:1000/" --name human-etime-check --mount type=bind,source=/mnt/FileServerDev/,target=/mnt/FileServerDev/ -d --restart unless-stopped -p 5001:5001 human-etime-check
+---------------
+docker stop human-etime-check
+docker rm $(docker ps -a -f status=exited -q)
+docker rmi human-etime-check
+
+*******DEVTEST-192.168.0.62*******
+docker build -t human-etime-check /home/admindocker/deployDES/HUMAN/Checada
+docker run -e "CONFIG_ENVIROMENT=env-var-conf-DES" -e "SERVER_ENVIROMENT=http://192.168.0.62:1000/" --name human-etime-check --mount type=bind,source=/mnt/FileServerDev/,target=/mnt/FileServerDev/ -d --restart unless-stopped -p 5001:5001 human-etime-check
+---------------
+docker stop human-etime-check
+docker rm $(docker ps -a -f status=exited -q)
+docker rmi human-etime-check
+
+*******CALIDAD-192.168.0.63*******
+docker build -t human-etime-check /home/soaqa/deployQA/HUMAN/Checada
+docker run -e "CONFIG_ENVIROMENT=env-var-conf-QA" -e "SERVER_ENVIROMENT=http://192.168.0.62:1000/" --name human-etime-check  --mount type=bind,source=/mnt/FileServerQA/,target=/mnt/FileServerQA/ -d --restart unless-stopped -p 5001:5001 human-etime-check
+---------------
+docker stop human-etime-check
+docker rm $(docker ps -a -f status=exited -q)
+docker rmi human-etime-check
+
+
+****************************COMANDOS PARA EJECUTAR SHELL Y VERIFICAR INSTALACION****************************
+DES
+dos2unix /home/admindocker/deployDesarrollo/SH-INSTALL/human19_checada.sh
+chmod 775 /home/admindocker/deployDesarrollo/SH-INSTALL/human19_checada.sh
+
+/home/admindocker/deployDesarrollo/SH-INSTALL/human19_checada.sh admindocker/deployDesarrollo des DES /mnt/FileServerDev/
+docker logs human-etime-check --tail all
+---------------
+QA
+dos2unix /home/soaqa/deployQA/SH-INSTALL/human19_checada.sh
+chmod 775 /home/soaqa/deployQA/SH-INSTALL/human19_checada.sh
+
+/home/soaqa/deployQA/SH-INSTALL/human19_checada.sh soaqa/deployQA qa QA /mnt/FileServerQA/
+docker logs human-etime-check --tail all

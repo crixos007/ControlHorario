@@ -1,0 +1,4 @@
+FROM openjdk:11
+ADD HumanChecada.jar HumanChecada.jar
+EXPOSE 5200
+ENTRYPOINT ["java", "-jar", "/HumanChecada.jar"]
